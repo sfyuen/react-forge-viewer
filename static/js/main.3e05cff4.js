@@ -13721,7 +13721,7 @@ var client = __webpack_require__(4391);
 ;// CONCATENATED MODULE: ./src/utils.js
 /* eslint-disable */ //export const APP_URL = 'https://aps-codepen.autodesk.io';
 //CORS Proxy
-const APP_URL='https://api.cors.lol/?url=https://aps-codepen.autodesk.io';/**
+const APP_URL='https://api.codetabs.com/v1/proxy/?quest=https://aps-codepen.autodesk.io';/**
  * Generates access token for viewing models in the Model Derivative service.
  * @param {(string, number) => void} callback Function that will be called with generated access token and number of seconds before it expires.
  */function getAccessToken(callback){fetch(APP_URL+'/api/token').then(resp=>resp.ok?resp.json():Promise.reject(resp)).then(credentials=>callback(credentials.access_token,credentials.expires_in)).catch(err=>{console.error(err);alert('Could not get access token. See console for more details.');});}/**
